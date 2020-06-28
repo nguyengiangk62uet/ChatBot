@@ -259,7 +259,7 @@
                 </div>
                 <!-- #END# Browser Usage -->
             </div>
-			<div class="row clearfix">
+			<!-- <div class="row clearfix">
 				<div id="fb-root"></div>
 				<script>(function(d, s, id) {
 				  var js, fjs = d.getElementsByTagName(s)[0];
@@ -269,7 +269,7 @@
 				  fjs.parentNode.insertBefore(js, fjs);
 				}(document, 'script', 'facebook-jssdk'));</script>
 				<div class="fb-page" data-href="https://www.facebook.com/UETVNUChatBot" data-width="500" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/UETVNUChatBot" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/UETVNUChatBot">UET ChatBot</a></blockquote></div>
-			</div>
+			</div> -->
         </div>
     </section>
 
