@@ -94,7 +94,6 @@ function ketnoi($userid,$gioitinh) { //tìm người chát
   //echo $result;
   $row = mysqli_fetch_assoc($result);
   $partner = $row['ID'];
-  echo $row;
   // xử lý kiểm tra
   if ($partner == 0) { // nếu người không có ai trong hàng chờ
   mysqli_query($conn, "UPDATE `users` SET `hangcho` = 1 WHERE `ID` = $userid"); 
@@ -161,8 +160,8 @@ function ketnoi($userid,$gioitinh) { //tìm người chát
 } else {  // neu co nguoi trong hàng chờ
     addketnoi($userid, $partner);
 	if($gioitinh == "male"){
-	sendchat($userid,"✅ Bạn đã được kết nối với một cá nữ (👩)");  
-	sendchat($partner,"✅ Bạn đã được kết nối với một cá nam (👱)");  
+	sendchat($userid,"✅ Bạn đã được kết nối với một cá " . $row['gt'] . " (👩)");  
+	sendchat($partner,"✅ Bạn đã được kết nối với một cá " . $gioitinh . " (👱)");  
 	}else if($gioitinh == "female"){
 	sendchat($partner,"✅ Bạn đã được kết nối với một cá nữ (👩)");  
 	sendchat($userid,"✅ Bạn đã được kết nối với một cá nam (👱)"); 	
