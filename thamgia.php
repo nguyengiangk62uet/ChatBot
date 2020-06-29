@@ -94,6 +94,7 @@ function ketnoi($userid,$gioitinh) { //tìm người chát
   //echo $result;
   $row = mysqli_fetch_assoc($result);
   $partner = $row['ID'];
+  echo $row;
   // xử lý kiểm tra
   if ($partner == 0) { // nếu người không có ai trong hàng chờ
   mysqli_query($conn, "UPDATE `users` SET `hangcho` = 1 WHERE `ID` = $userid"); 
