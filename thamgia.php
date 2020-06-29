@@ -159,17 +159,18 @@ function ketnoi($userid,$gioitinh) { //tìm người chát
 }
 } else {  // neu co nguoi trong hàng chờ
     addketnoi($userid, $partner);
-	if($gioitinh == "male"){
-	sendchat($userid,"✅ Bạn đã được kết nối với một cá " . $row['gt'] . " (👩)");  
-	sendchat($partner,"✅ Bạn đã được kết nối với một cá " . $gioitinh . " (👱)");  
-	}else if($gioitinh == "female"){
-	sendchat($partner,"✅ Bạn đã được kết nối với một cá nữ (👩)");  
-	sendchat($userid,"✅ Bạn đã được kết nối với một cá nam (👱)"); 	
-	}else{
-	sendchat($partner,"✅ Bạn đã được kết nối với một cá lạ(👤)");  
-	sendchat($userid,"✅ Bạn đã được kết nối với một cá lạ(👤)"); 	
-	}
-  
+	// if($gioitinh == "male"){
+	// sendchat($userid,"✅ Bạn đã được kết nối với một cá nữ (👩)");  
+	// sendchat($partner,"✅ Bạn đã được kết nối với một cá nam (👱)");  
+	// }else if($gioitinh == "female"){
+	// sendchat($partner,"✅ Bạn đã được kết nối với một cá nữ (👩)");  
+	// sendchat($userid,"✅ Bạn đã được kết nối với một cá nam (👱)"); 	
+	// }else{
+	// sendchat($partner,"✅ Bạn đã được kết nối với một cá lạ(👤)");  
+	// sendchat($userid,"✅ Bạn đã được kết nối với một cá lạ(👤)"); 	
+	// }
+  sendchat($userid,"✅ Bạn đã được kết nối với một cá");  
+	sendchat($partner,"✅ Bạn đã được kết nối với một cá");  
   }
 }
 
